@@ -40,6 +40,9 @@ def parse_args():
     parser.add_argument('--dict_fn', nargs='?', type=str, help="Filename of dictionary file.")
     args = vars(parser.parse_args())
 
+    if args["dict_fn"] == None:
+       parser.error('You must include a dictionary file name with the dict_fn flag. Use -h for more info.')
+
     return (args["dict_fn"])
 
 def main(argv=None):

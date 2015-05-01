@@ -14,7 +14,7 @@ This program will:
 ####Usage:
 
 ```
-./anagram_finder.py --filename \<filename\> 
+./anagram_finder.py --filename <filename> 
 ```
 
 This assumes python 2.7 or greater is installed on the system.
@@ -41,3 +41,5 @@ yaas, aasy, saay, ayas
 
 ####Potential Optimizations:
 -use an list [0-25] as the key value so I can use bucket sort instead of default python Timsort
+
+-testing should be automated

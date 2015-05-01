@@ -37,17 +37,17 @@ class AnagramFinder(object):
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Finds and lists anagrams from a dictionary file. Assumes dict format is a single word per line.')
-    parser.add_argument('--filename', nargs='?', type=str, help="Filename of dictionary file.")
+    parser.add_argument('--dict_fn', nargs='?', type=str, help="Filename of dictionary file.")
     args = vars(parser.parse_args())
 
-    return (args["filename"])
+    return (args["dict_fn"])
 
 def main(argv=None):
-    filename = parse_args()
+    dict_fn = parse_args()
     
     anagram_finder = AnagramFinder()
 
-    anagram_finder.find_anagrams(filename)
+    anagram_finder.find_anagrams(dict_fn)
     anagram_finder.print_anagrams()
 
 if __name__ == "__main__":

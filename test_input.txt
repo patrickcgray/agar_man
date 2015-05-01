@@ -1,3 +1,5 @@
+asserting that sets with partial versions or versions with extra letters get output properly
+
 hello
 hell
 hel
@@ -6,4 +8,42 @@ llheo
 lhleo
 olleh
 oollh
-helll
+hellloo
+
+asserting that sets with an equal num of letters and characters is output
+ascot
+coast
+costa
+tacso
+tasco
+
+asserting that sets with == 4 letters and > 4 words get output
+emir
+mire
+reim
+riem
+rime
+
+asserting that sets with == 4 letters and == 4 words get output
+yaas
+aasy
+saay
+ayas
+
+asserting that words with len < 4 that fit other constraints do not get output
+ary
+ray
+yar
+ayr
+
+asserting that sets with not enough words to match num of letters do not get output
+acher
+arche
+chare
+rache
+
+output should include:
+hello, heoll, llheo, lhleo, olleh
+ascot, coast, costa, tacso, tasco
+emir, mire, reim, riem, rime
+yaas, aasy, saay, ayas

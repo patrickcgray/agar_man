@@ -14,7 +14,7 @@ This program will:
 ####Usage:
 
 ```
-./anagram_finder.py --filename <filename> 
+./anagram_finder.py --dict_fn <filename> 
 ```
 
 This assumes python 2.7 or greater is installed on the system.
